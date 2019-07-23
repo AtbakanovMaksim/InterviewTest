@@ -1,0 +1,53 @@
+﻿Тестовое задание.
+
+
+1. Необходимо написать метод для выборки определенного числа строк с данными из файла.
+
+На вход подаются 2 параметра: путь к исходному файлу обязательный параметр, который содержит таблицу в текстовом виде и опциональный параметр количество строк с данными, которые надо выбрать из файла. По умолчанию выбирается 10 строк. Пример содержимого файла:
+
+      | case  | One       | Book   | Low | Book | Rating   | Product    | Date | Pairings      |
+      | 5 Hd  | STB/Other | LT     | ST  | POL  | Rating L | C          | LM   | 5             |
+      | 10 Hd | STB/Other | TTd    | LT  | ST   | POL      | Rating L   | C    | C Expected 1  |
+      | 2 Hd  | STB/Other | LT     | ST  | POL  | Rating L | C          | CL   | LM 5          |
+      | 8 Hd  | STB/Other | TTd    | LT  | ST   | POL      | Rating   L | C    | C Expected 1  |
+      | 13 Hd | STB       | TTd LT | ST  | POL  | L        | C          | CT   | Expected    1 |
+      | 5 Hd  | STB/Other | LT     | ST  | POL  | Rating L | C          | LM   | 5             |
+      | 10 Hd | STB/Other | TTd    | LT  | ST   | POL      | Rating L   | C    | C Expected 1  |
+      | 2 Hd  | STB/Other | LT     | ST  | POL  | Rating L | C          | CL   | LM 5          |
+      | 8 Hd  | STB/Other | TTd    | LT  | ST   | POL      | Rating   L | C    | C Expected 1  |
+      | 13 Hd | STB       | TTd LT | ST  | POL  | L        | C          | CT   | Expected    1 |
+      | 5 Hd  | STB/Other | LT     | ST  | POL  | Rating L | C          | LM   | 5             |
+      | 10 Hd | STB/Other | TTd    | LT  | ST   | POL      | Rating L   | C    | C Expected 1  |
+      | 2 Hd  | STB/Other | LT     | ST  | POL  | Rating L | C          | CL   | LM 5          |
+      | 8 Hd  | STB/Other | TTd    | LT  | ST   | POL      | Rating   L | C    | C Expected 1  |
+      | 13 Hd | STB       | TTd LT | ST  | POL  | L        | C          | CT   | Expected    1 |
+
+
+1     | case  | One       | Book   | Low | Book | Rating   | Product    | Date | Pairings      |
+2     | 5 Hd  | STB/Other | LT     | ST  | POL  | Rating L | C          | LM   | 5             |
+3     | 10 Hd | STB/Other | TTd    | LT  | ST   | POL      | Rating L   | C    | C Expected 1  |
+4     | 2 Hd  | STB/Other | LT     | ST  | POL  | Rating L | C          | CL   | LM 5          |
+5     | 8 Hd  | STB/Other | TTd    | LT  | ST   | POL      | Rating   L | C    | C Expected 1  |
+6     | 13 Hd | STB       | TTd LT | ST  | POL  | L        | C          | CT   | Expected    1 |
+7     | 5 Hd  | STB/Other | LT     | ST  | POL  | Rating L | C          | LM   | 5             |
+8     | 10 Hd | STB/Other | TTd    | LT  | ST   | POL      | Rating L   | C    | C Expected 1  |
+9     | 2 Hd  | STB/Other | LT     | ST  | POL  | Rating L | C          | CL   | LM 5          |
+10    | 8 Hd  | STB/Other | TTd    | LT  | ST   | POL      | Rating   L | C    | C Expected 1  |
+11    | 13 Hd | STB       | TTd LT | ST  | POL  | L        | C          | CT   | Expected    1 |
+12    | 5 Hd  | STB/Other | LT     | ST  | POL  | Rating L | C          | LM   | 5             |
+13    | 10 Hd | STB/Other | TTd    | LT  | ST   | POL      | Rating L   | C    | C Expected 1  |
+14    | 2 Hd  | STB/Other | LT     | ST  | POL  | Rating L | C          | CL   | LM 5          |
+15    | 8 Hd  | STB/Other | TTd    | LT  | ST   | POL      | Rating   L | C    | C Expected 1  |
+16    | 13 Hd | STB       | TTd LT | ST  | POL  | L        | C          | CT   | Expected    1 |
+
+метод должен делать следующие операции:
+Считать содержимое исходного файла
+Вырезать заданное число строк с данными из файла случайным образом
+Записать выбранные строки в результирующий файл. Путь к этому файлу и его расширение совпадает с путем и расширением исходного файла, а имя формируется как имя исходного файла + «_res».
+Сохранить исходный файл без выбранных строк.
+Вернуть необходимо путь к результирующему файлу.
+
+Пример вызова:
+resultPath = selectCases("D:/Temp/textfile.txt", 5);
+
+2. Написать тесты на эту функциональность.

@@ -1,0 +1,16 @@
+0     | case  | One       | Book   | Low | Book | Rating   | Product    | Date | Pairings      |
+1     | 5 Hd  | STB/Other | LT     | ST  | POL  | Rating L | C          | LM   | 5             |
+2     | 10 Hd | STB/Other | TTd    | LT  | ST   | POL      | Rating L   | C    | C Expected 1  |
+3     | 2 Hd  | STB/Other | LT     | ST  | POL  | Rating L | C          | CL   | LM 5          |
+4     | 8 Hd  | STB/Other | TTd    | LT  | ST   | POL      | Rating   L | C    | C Expected 1  |
+5     | 13 Hd | STB       | TTd LT | ST  | POL  | L        | C          | CT   | Expected    1 |
+6     | 5 Hd  | STB/Other | LT     | ST  | POL  | Rating L | C          | LM   | 5             |
+7     | 10 Hd | STB/Other | TTd    | LT  | ST   | POL      | Rating L   | C    | C Expected 1  |
+8     | 2 Hd  | STB/Other | LT     | ST  | POL  | Rating L | C          | CL   | LM 5          |
+9     | 8 Hd  | STB/Other | TTd    | LT  | ST   | POL      | Rating   L | C    | C Expected 1  |
+10    | 13 Hd | STB       | TTd LT | ST  | POL  | L        | C          | CT   | Expected    1 |
+11    | 5 Hd  | STB/Other | LT     | ST  | POL  | Rating L | C          | LM   | 5             |
+12    | 10 Hd | STB/Other | TTd    | LT  | ST   | POL      | Rating L   | C    | C Expected 1  |
+13    | 2 Hd  | STB/Other | LT     | ST  | POL  | Rating L | C          | CL   | LM 5          |
+14    | 8 Hd  | STB/Other | TTd    | LT  | ST   | POL      | Rating   L | C    | C Expected 1  |
+15    | 13 Hd | STB       | TTd LT | ST  | POL  | L        | C          | CT   | Expected    1 |
